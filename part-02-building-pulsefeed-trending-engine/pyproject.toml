@@ -1,0 +1,20 @@
+[project]
+name = "pulsefeed-part2"
+version = "0.1.0"
+description = "PulseFeed Part 2 — rate limiter, top-K trending counter, autocomplete trie (Data Structures and Algorithms in Python course)"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
