@@ -1,0 +1,6 @@
+# Everything the benchmark harness itself uses (argparse, importlib, json,
+# statistics, subprocess, sys, time, tracemalloc) is Python 3.9+ stdlib -- no
+# runtime dependency to run benchmark.py.
+#
+# pytest is only needed to run each candidate's own test_rate_limiter.py.
+pytest>=7.0
